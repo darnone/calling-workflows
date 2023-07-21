@@ -6,4 +6,4 @@ on:
 jobs:
 
   call-workflow-using-branch:
-    uses: softrams-iac/reusable-github-actions/.github/examples/reusable-workflow.yaml@main
+    uses: darnone/reusable-github-actions/.github/workflows/reusable-workflow.yaml@main
