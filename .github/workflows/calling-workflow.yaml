@@ -6,4 +6,4 @@ on:
 jobs:
 
   call-workflow-using-branch:
-    uses: darnone/reusable-github-actions/.github/workflows/reusable-workflow.yaml@main
+    uses: darnone/reusable-github-workflows/.github/workflows/reusable-workflow.yaml@main
