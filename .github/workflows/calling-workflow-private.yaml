@@ -1,4 +1,4 @@
-name: Calling workflow
+name: Calling Workflow Private
 
 on:
   workflow_dispatch:
