@@ -5,11 +5,5 @@ on:
 
 jobs:
 
-  call-workflow-using-release:
-    uses: softrams-iac/reusable-github-actions/.github/examples/reusable-workflow.yaml@v1
-
   call-workflow-using-branch:
     uses: softrams-iac/reusable-github-actions/.github/examples/reusable-workflow.yaml@main
-
-  call-workflow-using-sha:
-    uses: softrams-iac/reusable-github-actions/.github/examples/reusable-workflow.yaml@2bc86633  
