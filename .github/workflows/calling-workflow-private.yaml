@@ -1,0 +1,9 @@
+name: Calling workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  call-workflow-using-branch:
+    uses: darnone/reusable-workflows-private/.github/workflows/reusable-workflow.yaml@main
