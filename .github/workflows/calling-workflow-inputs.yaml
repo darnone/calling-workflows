@@ -1,8 +1,8 @@
-name: Calling Workflow
+name: Calling Workflow Inputs
 
 on:
   workflow_dispatch:
-  
+
 jobs:
 
   call-workflow-using-branch:
