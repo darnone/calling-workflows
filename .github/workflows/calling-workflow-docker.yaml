@@ -1,5 +1,6 @@
 name: Docker Login
-on: push
+on:
+  workflow_dispatch:
 jobs:
   checkCommit:
     name: Docker Login
