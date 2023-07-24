@@ -1,0 +1,15 @@
+name: Auto Update Pull Requests
+
+on:
+  # This will trigger on all pushes to all branches.
+  push: {}
+ 
+jobs:
+  call-auto-update-pr-reusable:
+    uses: darnone/reusable-github-workflows/.github/workflows/auto-update-pr-reusable.yaml@main
+    secrets:
+      dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
+      dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
+      sr_token: ${{ secrets.SR_TOKEN }}
+  
+
