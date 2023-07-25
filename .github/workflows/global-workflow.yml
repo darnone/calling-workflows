@@ -1,0 +1,21 @@
+name: Global workflow to rule them all
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      repo_name:
+        description: |
+          You can specify name of the repository where workflows should be pushed manually. As long as repository is not ignored by workflow settings.
+          If you do not specify exact repository name, the workflow will try to replicate all missing changes to all repositories.
+        required: false
+
+jobs:
+
+  call-global-workflow-reusable:
+    uses: darnone/reusable-github-workflows/.github/workflows/global-workflow-reusable.yaml@main
+    secrets:
+      dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
+      dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
+      github_token: ${{ secrets.SR_TOKEN }}
