@@ -5,10 +5,11 @@ on:
     branches:
       # See https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
       - releases/v[0-9]+
+      
 jobs:
 
   call-create-releases-branches-reusable:
-    uses: darnone/reusable-github-workflows/.github/workflows/create-releases-branches-reusable.yaml@main
+    uses: darnone/reusable-github-workflows/.github/workflows/release-please-branches-reusable.yaml@main
     secrets:
       github_token: ${{ secrets.GITHUB_TOKEN }}
       sr_token: ${{ secrets.SR_TOKEN }}

@@ -1,0 +1,14 @@
+name: Create Releases From Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  call-create-releases-main-reusable:
+    uses: darnone/reusable-github-workflows/.github/workflows/releases-main-reusable.yaml@main
+    secrets:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      sr_token: ${{ secrets.SR_TOKEN }}
