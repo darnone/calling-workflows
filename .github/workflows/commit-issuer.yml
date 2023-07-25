@@ -4,7 +4,7 @@ on: push
 
 jobs:
 
-  call-commit-issuer-resuable:
+  call-commit-issuer-reusable:
     uses: darnone/reusable-github-workflows/.github/workflows/commit-issuer-reusable.yaml@main
     secrets:
       dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
