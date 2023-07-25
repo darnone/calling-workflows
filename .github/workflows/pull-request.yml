@@ -1,0 +1,12 @@
+name: Terraform and Terragrunt Pull Request Checks
+
+on:
+  - pull_request
+
+jobs:
+
+  call-pull-request-reusable:
+    uses: darnone/reusable-github-workflows/.github/workflows/pull-request-reusable.yaml@main
+    secrets:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      sr_token: ${{ secrets.SR_TOKEN }}
